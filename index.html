@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Namaste React</title>
 </head>
 
@@ -24,15 +25,7 @@
     <!-- Using react - using CDN (Content delivery network) -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-
-
-    <script>
-        const heading = React.createElement("h1" , {} , "Content || Hello world from React!!")
-        const rootDiv = document.getElementById("root") //the element where we want all the react code to be injected 
-        const root = ReactDOM.createRoot(rootDiv)
-        root.render(heading)
-    </script>
+    <script src="./app.js"></script>
 </body>
     
 </html>
