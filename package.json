@@ -1,0 +1,22 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is Namaste React codebase",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul43177/NamasteReact.git"
+  },
+  "author": "Rahul Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahul43177/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/rahul43177/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
