@@ -1,65 +1,43 @@
-/*""
-    <div id = "parent"> 
-        <div id = "child">
-            <h1></h1>
-        </div>
-    </div>
-*/
-
-// const parent = React.createElement(
-//     "div" , 
-//     {
-//         id : "parent"    
-//     } , 
-//     React.createElement(
-//         "div" , 
-//         {id : "child"} , 
-//         React.createElement(
-//             "h1" , 
-//             {} , 
-//             "I am a heading and the structure is -> parent -> child -> h1"
-//         )
-//     )
-// )
-
-/*
-nested structure in the react
-parent 
-    child1
-    child2 
-        heading
-
-*/ 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-const parent = React.createElement(
-    "div" , 
-    {id:"parent"} , 
-    [React.createElement(
-        "div" ,  
-        {
-            id : "child1" 
-        } , 
-        "This is the child1"
-    ), 
-    React.createElement(
-        "div" , 
-        {id : "child2"} , 
-        React.createElement(
-            "h1" , 
-            {} , 
-            `
-            parent 
-                child1 
-                child2 - 
-                    heading 
-            `
-        )
-    )
-]
+//react element 
+const heading = <h1>React Component</h1>
+
+const secondHeading = (
+    <h3>
+        This is the second heading
+    </h3>
 )
 
-console.log("Parent" , parent);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+//React component 
+const number = 10000
+function HeadingComponent() {
+    return (
+        <div>
+            {number}
+            {number % 2 == 0 ? "Ye toh even number hai hahaha" : "Ye toh odd number hai"}
+        </div>
+    )
+}
+
+const TitleComponent = () =>  { 
+    return (
+        <div> 
+            <h1>
+                Hi There!!
+            </h1>
+        </div>
+    )
+}
+
+const TitleNewComponent = () => (
+    <h3>
+        New Title
+    </h3>
+)
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<HeadingComponent/>)
+
