@@ -18,6 +18,7 @@ function HeadingComponent() {
         <div>
             {number}
             {number % 2 == 0 ? "Ye toh even number hai hahaha" : "Ye toh odd number hai"}
+            <TitleComponent/>
         </div>
     )
 }
