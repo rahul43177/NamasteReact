@@ -22,3 +22,4 @@
 - React component 
 - One Component inside another component 
 - Element inside the Component 
+- Cross site scripting || Sanitisation of the code
