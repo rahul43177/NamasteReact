@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client";
 import logo from "./sources/ApplicationLogo.jpg";
 import logo2 from "/sources/Application-logo-2.jpg";
 import { apiResponse } from "./swiggyAPI";
+import rahulDish from './sources/rahul-dish.webp'
+import muskanDish from './sources/muskan-dish.webp'
 
 const AppLayout = () => {
   return (
@@ -45,6 +47,21 @@ const BodyComponent = () => {
 
       {/* Card Container */}
       <div className="res-card-container">
+
+      <RestaurantCardContainer 
+        resName = "Rahul Dish"
+        resCuisine = "Madhya Pradhesh Special" 
+        resRating = "5"  
+        imageSrc = {rahulDish}
+      />
+
+      <RestaurantCardContainer 
+        resName = "Muskan Dish"
+        resCuisine = "Odisha + Bangalore Crazy Combo" 
+        resRating = "20"  
+        imageSrc = {muskanDish}
+      />
+
         {apiResponse.map((data) => {
           return (
             <RestaurantCardContainer 
