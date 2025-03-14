@@ -23,3 +23,13 @@
 - One Component inside another component 
 - Element inside the Component 
 - Cross site scripting || Sanitisation of the code
+
+# Episode-4 : Talk is cheap , Show me the code!
+- Application planning : Food Delivery App
+- Planning the layout 
+- Header , Body and Footer 
+- Hard coded everything 
+- Props : Passing arguments to the function or properties 
+- Removed all the hard coded stuff 
+- Swiggy API response 
+- Removed the Hard Coded Stuff
