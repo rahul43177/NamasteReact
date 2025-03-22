@@ -1,25 +1,42 @@
-import { apiResponse } from "../../swiggyAPI";
+import { SWIGGY_CLOUDINARYIMAGEID } from "../utils/constants";
+import { apiResponse } from "../utils/swiggyAPI";
+import {useState} from 'react'
 
 
-export const  BodyComponent = () => {
+export const BodyComponent = () => {
+  const [resturants , setRestaurants] = useState(apiResponse);
+  function findTopRestaurants() {
+     const topRestaurants = resturants.filter((data) => {
+      rating = Number(data.avgRatingString);
+      return rating > 4 
+    })
+    console.log("Top resturants list" , topRestaurants);
+    setRestaurants(topRestaurants);
+  }
+  
   return (
     <div className="body">
-      {/* Search Bar */}
-      <div className="search-container">
-        <input type="text" className="search-input" placeholder="Search for restaurants and food..." />
-        <button className="search-button">Search</button>
+      {/* Top Rated Restaurant */}
+      <div className = "filter">
+        <button
+          className="filter-button"
+          onClick={findTopRestaurants}
+        >
+          Top Rated Restaurants
+        </button>
       </div>
+      
 
       {/* Card Container */}
       <div className="res-card-container">
-        {apiResponse.map((data) => {
+        {resturants.map((data , index)  => {
           return (
             <RestaurantCardContainer 
-              key={data.id}
+              key={`${data.id}-${index}`}
               resName={data.name}
               resCuisine={data.cuisines}
               resRating={Number(data.avgRatingString)}
-              imageSrc={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${data.cloudinaryImageId}`}
+              imageSrc={`${SWIGGY_CLOUDINARYIMAGEID}${data.cloudinaryImageId}`}
             />
           );
         })}

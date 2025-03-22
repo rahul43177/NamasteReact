@@ -228,3 +228,10 @@
       font-size: 12px;
     }
   }
+
+
+  /* Filter Button */
+
+  .filter-button {
+    margin-bottom : 10px;  
+  }
