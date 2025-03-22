@@ -47,21 +47,6 @@ const BodyComponent = () => {
 
       {/* Card Container */}
       <div className="res-card-container">
-
-      <RestaurantCardContainer 
-        resName = "Rahul Dish"
-        resCuisine = "Madhya Pradhesh Special" 
-        resRating = "5"  
-        imageSrc = {rahulDish}
-      />
-
-      <RestaurantCardContainer 
-        resName = "Muskan Dish"
-        resCuisine = "Odisha + Bangalore Crazy Combo" 
-        resRating = "20"  
-        imageSrc = {muskanDish}
-      />
-
         {apiResponse.map((data) => {
           return (
             <RestaurantCardContainer 
