@@ -33,3 +33,4 @@
 - Removed all the hard coded stuff 
 - Swiggy API response 
 - Removed the Hard Coded Stuff
+- Sending `key` in the component over iterating
