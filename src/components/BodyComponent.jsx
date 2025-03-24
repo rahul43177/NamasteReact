@@ -2,9 +2,10 @@ import { CONTANT_SWIGGY_CLOUDINARYIMAGEID } from "../utils/constants";
 import { apiResponse, cloudinaryImageId } from "../utils/swiggyAPI";
 import {useState , useEffect} from 'react'
 import axios from 'axios'
+import Shimmer from "./ Shimmer";
 
 export const BodyComponent = () => {
-  const [resturants , setRestaurants] = useState(apiResponse);
+  const [resturants , setRestaurants] = useState([]);
   
   useEffect(()=> {
     fetchResData();
@@ -36,6 +37,10 @@ export const BodyComponent = () => {
     setRestaurants(topRatedRes);
   }
   
+  if(resturants.length === 0) {
+    return < Shimmer/>
+  }
+
   return (
     <div className="body">
       {/* Top Rated Restaurant */}
