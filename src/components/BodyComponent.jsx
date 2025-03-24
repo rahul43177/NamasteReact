@@ -5,9 +5,12 @@ import {useState} from 'react'
 
 export const BodyComponent = () => {
   const [resturants , setRestaurants] = useState(apiResponse);
-  function findTopRestaurants() {
-    const topRatingRes = resturants.filter((data) => Number(data.avgRatingString) > 4 );
-    setRestaurants(topRatingRes);
+
+  const findTopRestaurants = () => {
+    let topRatedRes = resturants.filter((singleRes) => {
+      return Number(singleRes.avgRatingString) >= 4 
+    })
+    setRestaurants(topRatedRes);
   }
   
   return (
@@ -26,7 +29,6 @@ export const BodyComponent = () => {
       {/* Card Container */}
       <div className="res-card-container">
         {resturants.map((data , index)  => {
-          console.log(`${data.id}-${index}`);
           return (
             <RestaurantCardContainer 
               key={`${data.id}-${index}`}
