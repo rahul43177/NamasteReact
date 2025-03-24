@@ -34,3 +34,28 @@
 - Swiggy API response 
 - Removed the Hard Coded Stuff
 - Sending `key` in the component over iterating
+
+## Episode-5 : Let’s get hooked
+- Clean our application 
+- Folder seperation 
+- Compartmentalisation 
+- Export and Import in React
+    - Default import/export
+    - Named import/export 
+- React Hooks 
+    - useState
+- How React Works Behind the scenes ? 
+    - Reconciliation
+    - React Fiber Architecture 
+    - Diff Algorithm 
+    - How does useState works behind the scenes ? 
+## Episode-6 : Exploring the world
+- Monolith Architecture 
+- Microservice Architecture 
+- Monolith vs Microservice ? 
+- How Microservice communicate with each other ? 
+- How React renders behind the scene ? 
+- useEffect hook 
+- API calls using Fetch 
+- Adding loader (Not recommended)
+- Shimmer UI : Implementing it. 
