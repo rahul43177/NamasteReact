@@ -37,11 +37,9 @@ export const BodyComponent = () => {
     setRestaurants(topRatedRes);
   }
   
-  if(resturants.length === 0) {
-    return < Shimmer/>
-  }
 
-  return (
+
+  return resturants.length === 0 ? ( <Shimmer/> ) :(
     <div className="body">
       {/* Top Rated Restaurant */}
       <div className = "filter">
