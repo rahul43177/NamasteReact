@@ -250,3 +250,16 @@
     transition: transform 0.5s ease;
     color : grey
 }
+
+
+.button {
+  padding: 0 20px;
+  margin: 0 20px ;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+
+.filter {
+  display: flex;
+  
+}
