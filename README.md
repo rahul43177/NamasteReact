@@ -59,3 +59,10 @@
 - API calls using Fetch 
 - Adding loader (Not recommended)
 - Shimmer UI : Implementing it. 
+- Toggle Feature : Login/Logout Button 
+- useState hook 
+    - Why do we need it ? 
+    - How to maintain state in the React Application ?
+- Search Functionality 
+    - Filtering Data & Maintaing the OG Restaurant Data
+- NOTE : "CODE SLOW , PEOPLE WHO CODE FAST TAKE MORE TIME TO DEBUG || PEOPLE WHO CODE SLOW TAKE LESS OR NO TIME IN DEBUGGING"
