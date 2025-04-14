@@ -261,5 +261,11 @@
 
 .filter {
   display: flex;
-  
+  justify-content: space-between;
+
+}
+.search {
+  display: flex;
+  padding : 10px; 
+  margin: 0 10px;
 }
