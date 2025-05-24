@@ -66,3 +66,10 @@
 - Search Functionality 
     - Filtering Data & Maintaing the OG Restaurant Data
 - NOTE : "CODE SLOW , PEOPLE WHO CODE FAST TAKE MORE TIME TO DEBUG || PEOPLE WHO CODE SLOW TAKE LESS OR NO TIME IN DEBUGGING"
+## Episode-7 : Finding the Path
+- `useEffect` Hook in depth
+- `useState` hook in depth
+- `react-router-dom` : Routing in ReactJs 
+    - Routing of pages 
+    - Handling the error pages 
+    - `createBrowserRouter` , `RouterProvider` , `useRouteError` and how to use them. 
